@@ -4,6 +4,16 @@
   box-sizing: border-box;
 }
 
+html, body {
+  height: 100%;
+  background-color: #F2F2F2;
+}
+
+#centro {
+  margin: 0 auto;
+  max-width: 1024px;
+}
+
 header {
   background: #4A90E2;
   height: 64px;
@@ -11,13 +21,30 @@ header {
   align-items: center;
   padding-left: 40px;
   padding-right: 40px;
+  justify-content: space-between;
 }
 
-header img.logo {
+header > img.logo {
   width: 121px;
   height: 24px;
 }
 
-header .menuUser {
+header > .menuUser {
   color: #FFF;
+}
+
+
+article > .post {
+  padding: 8px;
+  display: flex;
+}
+
+article > .post > .nome-autor {
+  
+  flex-direction: row;
+}
+
+article > .img-autor-post {
+  width: 24px;
+  height: 24px;
 }
