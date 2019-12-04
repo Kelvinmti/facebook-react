@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background: #4A90E2;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+header img.logo {
+  width: 121px;
+  height: 24px;
+}
+
+header .menuUser {
+  color: #FFF;
+}
