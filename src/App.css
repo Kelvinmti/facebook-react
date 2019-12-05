@@ -10,19 +10,23 @@ html, body {
   font-family: 'Open Sans', sans-serif;
 }
 
-#centro {
-  margin: 0 auto;
-  max-width: 1024px;
+.centro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 header {
   background: #4A90E2;
   height: 64px;
+}
+
+header .itens-header {
   display: flex;
   align-items: center;
-  padding-left: 40px;
-  padding-right: 40px;
   justify-content: space-between;
+  width: 1024px;
+  color: #FFF;
 }
 
 header > img.logo {
@@ -39,10 +43,17 @@ section.post-list {
   justify-content: center;
 }
 
+/* POST */
+
 article.post {
   margin: 8px;
   width: 700px;
   background-color: #FFF;
+  border-radius: 3px;
+  box-shadow: 0 0 10px #CCC;
+  -webkit-box-shadow: 0 0 10px #CCC;
+  -moz-box-shadow: 0 0 10px #CCC;
+  padding: 13px;
 }
 
 article.post .painel-post {  
@@ -62,16 +73,36 @@ article.post .desc-autor {
 article.post .desc-autor .nome {
   font-weight: bold;
   color: #636869;
-  font-size: 14px;
+  font-size: 0.8em;
 }
 
 article.post .desc-autor .data {
   color: #CCC;
-  font-size: small;
+  font-size: 0.6em;
 }
 
-article .img-autor-post {
+article.post .img-autor-post {
   width: 30px;
   height: 30px;
   border-radius: 50%;
+}
+
+article.post .pergunta {
+  font-size: 0.8em;
+  margin-top: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #EEE;
+}
+
+article.post .resposta {
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+article.post .resposta .txt-resposta {
+  font-size: 0.8em;
+  padding: 10px 8px;
+  background-color: #ececec;
+  border-radius: 17px;
 }
