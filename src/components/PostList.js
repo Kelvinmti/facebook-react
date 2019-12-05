@@ -28,7 +28,7 @@ class PostList extends Component {
 
     render() {
         return (
-            <section>
+            <section className="post-list">
                 <Post />
             </section>
         )

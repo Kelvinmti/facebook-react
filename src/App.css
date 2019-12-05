@@ -7,6 +7,7 @@
 html, body {
   height: 100%;
   background-color: #F2F2F2;
+  font-family: 'Open Sans', sans-serif;
 }
 
 #centro {
@@ -33,18 +34,44 @@ header > .menuUser {
   color: #FFF;
 }
 
-
-article > .post {
-  padding: 8px;
+section.post-list {
   display: flex;
+  justify-content: center;
 }
 
-article > .post > .nome-autor {
-  
-  flex-direction: row;
+article.post {
+  margin: 8px;
+  width: 700px;
+  background-color: #FFF;
 }
 
-article > .img-autor-post {
-  width: 24px;
-  height: 24px;
+article.post .painel-post {  
+  display: flex;
+  align-items: center;
+}
+
+article.post .painel-post > img {
+  margin-right: 10px;
+}
+
+article.post .desc-autor {
+  display: flex;
+  flex-direction: column;
+}
+
+article.post .desc-autor .nome {
+  font-weight: bold;
+  color: #636869;
+  font-size: 14px;
+}
+
+article.post .desc-autor .data {
+  color: #CCC;
+  font-size: small;
+}
+
+article .img-autor-post {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
 }
