@@ -30,6 +30,7 @@ class PostList extends Component {
         return (
             <section className="post-list">
                 <Post />
+                <Post />
             </section>
         )
     }

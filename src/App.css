@@ -41,12 +41,14 @@ header > .menuUser {
 section.post-list {
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 /* POST */
 
 article.post {
-  margin: 8px;
+  margin: 20px 0;
   width: 700px;
   background-color: #FFF;
   border-radius: 3px;
@@ -102,7 +104,8 @@ article.post .resposta {
 
 article.post .resposta .txt-resposta {
   font-size: 0.8em;
-  padding: 10px 8px;
+  padding: 13px;
   background-color: #ececec;
-  border-radius: 17px;
+  border-radius: 24px;
+  margin-left: 10px;
 }
