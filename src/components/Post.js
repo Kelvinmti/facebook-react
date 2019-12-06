@@ -1,23 +1,23 @@
 import React, { Component } from 'react';
 
 import foto_autor from '../assets/perfil.png';
-import foto_resposta from '../assets/kelvin.jpg';
 import Comment from './Comment';
 
-const Post = () => {
+const Post = ({ data : post }) => {
         return (
             <article className="post">
                 <div className="painel-post">
                     <img src={foto_autor} className="img-autor-post"></img>
                     <div className="desc-autor">
-                        <span className="nome">Júlio Alcantara</span>
-                        <span className="data">04 Jun 2019</span>
+                        <span className="nome">{post.author.name}</span>
+                        <span className="data">{post.date}</span>
                     </div>
                 </div>
                 <div className="pergunta">
-                    Pessoal, alguém sabe explicar a diferença de front-end para back-end?
+                    {post.content}
                 </div>
-                {/* <Comment /> */}
+                {post.comments.map(comment => <Comment key={comment.id} data={comment} /> )}
+                
             </article>
         );
 }
