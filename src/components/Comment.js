@@ -5,7 +5,7 @@ const Comment = ({ data : comment }) => {
   return(
     <div className="resposta">
       <img src={foto_resposta} className="img-autor-post"></img>
-      <div className="txt-resposta"><strong>{comment.author.name}</strong>&nbsp;
+      <div className="txt-resposta"><strong className="autor-comment">{comment.author.name}</strong>
           {comment.content}
       </div>
     </div>

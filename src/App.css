@@ -6,7 +6,7 @@
 
 html, body {
   height: 100%;
-  background-color: #F2F2F2;
+  background-color: #efefef;  /* #F2F2F2; */
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -25,8 +25,9 @@ header .itens-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 1024px;
+  min-width: 70vw;
   color: #FFF;
+  padding: 0 2%;
 }
 
 header > img.logo {
@@ -48,8 +49,11 @@ section.post-list {
 /* POST */
 
 article.post {
-  margin: 20px 0;
-  width: 700px;
+  margin-top: 20px;
+  margin-left: 20vw;
+  margin-right: 20vw;
+  margin-top: 20px;
+  min-width: 60vw;
   background-color: #FFF;
   border-radius: 3px;
   box-shadow: 0 0 10px #CCC;
@@ -110,3 +114,14 @@ article.post .resposta .txt-resposta {
   margin-left: 10px;
   text-align: justify;
 }
+
+article.post .resposta .txt-resposta .autor-comment {
+  margin-right: 5px;
+}
+
+/* Responsive */
+ @media screen and (min-width: 200px) and (max-width: 500px) {
+  article.post .resposta .txt-resposta .autor-comment {
+    display: block;
+  }
+ }
